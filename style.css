@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "greycliff-cf", sans-serif;
+}
+
+header {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal img {
+    max-width: 165px;
+    width: 165px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero img {
+    width: 420px;
+}
+
+.hero button {
+    background-color: #d98e04;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+}
