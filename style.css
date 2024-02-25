@@ -78,17 +78,17 @@ header {
 }
 
 .hero div {
-    max-width: 600px;
+    max-width: 580px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
 .hero img {
-    width: 420px;
+    width: 480px;
 }
 
 .hero button {
@@ -104,6 +104,8 @@ header {
 .corretoras-seguros {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 46px 66px;
 }
 
 .corretoras-seguros img {
@@ -115,18 +117,57 @@ header {
     justify-content: space-between;
 }
 
+.artigos div {
+    width: 30%;
+}
+
 .artigos img {
-    width: 320px;
+    width: 100%;
 }
 
 footer {
     background-color: #022728;
-    text-align: center;
+    padding: 10px 0;
+    font-weight: 300;
+}
+
+footer section {
+    width: 1366px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section h4 {
+    color: white;
+}
+
+footer .menu-secundario {
+    line-height: 30px;
+}
+
+footer img {
+    width: 120px;
+    margin-bottom: 20px;
 }
 
 footer p {
+    font-size: 14px;
     color: white;
-    padding: 10px;
+}
+
+footer .container-direitos-reservados {
+    border: 1px solid rgb(120, 120, 120);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+footer .direitos-reservados {
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 18px;
     font-weight: 300;
     font-size: 14px;
+    text-align: center;
 }
