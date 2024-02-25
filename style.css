@@ -121,8 +121,36 @@ header {
     width: 30%;
 }
 
+.artigos h3 {
+    font-size: 24px;
+    text-align: left;
+    line-height: 30px;
+    margin: 16px 0px;
+}
+
+.artigos p {
+    font-size: 18px;
+}
+
+.artigos a {
+    text-decoration: none;
+    margin: 16px 0;
+    font-weight: 400;
+}
+
 .artigos img {
     width: 100%;
+}
+
+.artigos .btn-leia-mais {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.artigos .leia-mais {
+    width: 22px;
+    margin-left: 10px;
 }
 
 footer {
