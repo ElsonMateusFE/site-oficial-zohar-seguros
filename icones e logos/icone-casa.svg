@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25.27 23.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-988.12" y="-5.49" width="960" height="1903.34"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="M21.5,20.46c.3,0,.55-.25.55-.55v-8.73c0-.3-.25-.55-.55-.55s-.55.25-.55.55v8.73c0,.3.25.55.55.55Z"/>
+      <path class="cls-2" d="M18.98,22.18h-3.38v-4.97h-5.94v4.97h-4.92v-11c0-.3-.25-.55-.55-.55s-.55.25-.55.55v12.1h7.12v-4.97h3.74v4.97h4.48c.3,0,.55-.25.55-.55s-.25-.55-.55-.55Z"/>
+      <path class="cls-2" d="M21.5,22.13c-.33,0-.6.27-.6.6s.27.6.6.6.6-.27.6-.6-.27-.6-.6-.6Z"/>
+      <path class="cls-2" d="M17.52,2.85c.3,0,.55-.25.55-.55v-1.23h2.72v4.23c0,.3.25.55.55.55s.55-.25.55-.55V.98c0-.52-.42-.94-.94-.94h-3.03c-.52,0-.94.42-.94.94v1.33c0,.3.25.55.55.55Z"/>
+      <path class="cls-2" d="M25.07,10.42L12.7.06l-.07-.06L.2,10.42c-.11.09-.18.23-.19.37-.01.15.03.29.13.4.19.23.54.26.77.07L12.64,1.43l11.73,9.83c.1.08.22.13.35.13.16,0,.32-.07.42-.2.09-.11.14-.26.13-.4s-.08-.28-.19-.37Z"/>
+    </g>
+  </g>
+  <g id="Imagens">
+    <g class="cls-3">
+      <image width="6240" height="4160" transform="translate(-1852.76 -5.51) scale(.46)" xlink:href="Imagem/Familia em Casa.jpg"/>
+    </g>
+  </g>
+</svg>

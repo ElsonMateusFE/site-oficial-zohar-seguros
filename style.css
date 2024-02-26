@@ -70,6 +70,18 @@ header {
     text-decoration: none;
 }
 
+.menu-principal menu {
+    display: flex;
+}
+
+.menu-principal .produtos {
+    align-items: center;
+}
+
+.menu-principal menu img {
+    width: 10px;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -85,6 +97,11 @@ header {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .hero img {
@@ -115,6 +132,7 @@ header {
 .artigos {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8%;
 }
 
 .artigos div {
@@ -151,6 +169,173 @@ header {
 .artigos .leia-mais {
     width: 22px;
     margin-left: 10px;
+}
+
+.seguro-residencial-text {
+    width: 32%;
+    margin: auto;
+}
+
+.seguro-residencial aside {
+    border: 1px solid white;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 200px;
+}
+
+.seguro-residencial aside .card-destaque {
+    display: flex;
+    align-items: center;
+}
+
+.seguro-residencial aside .card-destaque img {
+    width: 26px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.seguro-residencial aside h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.seguro-residencial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #034159;
+}
+
+.seguro-residencial h3 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.seguro-residencial .btn-seguro-residencial-inicial {
+    background-color: #d98e04;
+    color: white;
+    padding: 8px 26px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin: 16px 0;
+}
+
+.seguro-residencial h4 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.seguro-residencial .beneficios {
+    margin-top: 70px;
+}
+
+.seguro-residencial p {
+    color: white;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.seguro-residencial img {
+    width: 50%;
+}
+
+.seguro-residencial .btn-cta-final {
+    background-color: #d98e04;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin-top: 60px;
+}
+
+.seguro-viagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seguro-viagem-text {
+    width: 32%;
+    margin: auto;
+}
+
+.seguro-viagem aside {
+    border: 1px solid #022728;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 200px;
+}
+
+.seguro-viagem aside .card-destaque {
+    display: flex;
+    align-items: center;
+}
+
+.seguro-viagem aside .card-destaque img {
+    width: 26px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.seguro-viagem aside h6 {
+    color: #022728;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.seguro-viagem h3 {
+    color: #022728;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.seguro-viagem .btn-seguro-viagem-inicial {
+    background-color: #d98e04;
+    color: white;
+    padding: 8px 26px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin: 16px 0;
+}
+
+.seguro-viagem h4 {
+    color: #022728;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.seguro-viagem .beneficios {
+    margin-top: 70px;
+}
+
+.seguro-viagem p {
+    color: #022728;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.seguro-viagem img {
+    width: 50%;
+}
+
+.seguro-viagem .btn-cta-final {
+    background-color: #d98e04;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin-top: 60px;
 }
 
 footer {
