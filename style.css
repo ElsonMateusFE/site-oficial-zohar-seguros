@@ -22,6 +22,7 @@
     margin: auto;
 }
 
+
 .card-promocional strong {
     color: white;
 }
@@ -39,11 +40,30 @@
     font-size: 16px;
     border: none;
     font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 414px) {
+    .card-promocional div {
+        margin: 6px 0px;
+        display: block;
+        text-align: center;
+    }
+
+    .card-promocional button {
+        margin-top: 10px;
+    }
 }
 
 header {
     width: 1366px;
     margin: 25px auto;
+}
+
+@media (max-width: 414px) {
+    header {
+        width: 90%;
+    }
 }
 
 .menu-principal {
@@ -65,6 +85,16 @@ header {
     margin-left: 4px;
 }
 
+@media (max-width: 414px) {
+    .menu-principal menu a {
+        display: none;
+    }
+
+    .menu-principal .logo-zohar {
+        margin-bottom: 40px;
+    }
+}
+
 .btn-contato {
     background-color: #d98e04;
     color: white;
@@ -72,6 +102,7 @@ header {
     border-radius: 6px;
     font-size: 18px;
     border: none;
+    cursor: pointer;
 }
 
 .menu-principal menu {
@@ -119,6 +150,34 @@ header {
     font-size: 18px;
     border: none;
     margin-top: 34px;
+    cursor: pointer;
+}
+
+@media (max-width: 414px) {
+    .hero {
+        display: block;
+        margin: 0;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 .corretoras-seguros {
@@ -129,7 +188,19 @@ header {
 }
 
 .corretoras-seguros img {
-    width: 160px;
+    width: 180px;
+}
+
+.corretoras-seguros #icone-mag {
+    width: 120px;
+}
+
+.corretoras-seguros #icone-allianz {
+    width: 180px;
+}
+
+.corretoras-seguros #icone-omint {
+    width: 150px;
 }
 
 .artigos {
@@ -176,13 +247,24 @@ header {
     margin-left: 10px;
 }
 
+@media (max-width: 414px) {
+    .artigos {
+        display: block;
+    }
+
+    .artigos div {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
 .seguro-residencial-text {
     width: 32%;
     margin: auto;
 }
 
 .seguro-residencial aside {
-    border: 1px solid white;
+    border: 1.9px solid white;
     width: 220px;
     padding: 10px;
     margin-bottom: 16px;
@@ -228,6 +310,7 @@ header {
     font-size: 18px;
     border: none;
     margin: 16px 0;
+    cursor: pointer;
 }
 
 .seguro-residencial h4 {
@@ -260,6 +343,21 @@ header {
     font-size: 18px;
     border: none;
     margin-top: 60px;
+    cursor: pointer;
+}
+
+@media (max-width: 414px) {
+    .img-familia {
+        display: none;
+    }
+
+    .seguro-residencial-text {
+        width: 90%;
+    }
+
+    .seguro-residencial .btn-cta-final {
+        width: 100%;
+    }
 }
 
 .seguro-viagem {
@@ -287,7 +385,7 @@ header {
 }
 
 .seguro-viagem aside .card-destaque img {
-    width: 26px;
+    width: 46px;
     margin-right: 12px;
     margin-left: 12px;
 }
@@ -313,6 +411,7 @@ header {
     font-size: 18px;
     border: none;
     margin: 16px 0;
+    cursor: pointer;
 }
 
 .seguro-viagem h4 {
@@ -344,6 +443,27 @@ header {
     font-size: 18px;
     border: none;
     margin-top: 60px;
+    cursor: pointer;
+}
+
+@media (max-width: 414px) {
+    .img-new-york {
+        display: none;
+    }
+
+    .seguro-viagem-text {
+        width: 90%;
+    }
+
+    .seguro-viagem .btn-cta-final {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .img-mulher-no-carro {
+        display: none;
+    }
 }
 
 footer {
@@ -376,10 +496,19 @@ footer p {
     font-size: 14px;
     color: white;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
 }
 
 footer .container-direitos-reservados {
-    border: 1px solid rgb(120, 120, 120);
+    border: 1.9px solid rgb(120, 120, 120);
     border-left: none;
     border-bottom: none;
     border-right: none;
