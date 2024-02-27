@@ -32,15 +32,16 @@
     color: white;
 }
 
-.card-promocional button {
+.card-promocional a {
     background-color: #d98e04;
     color: white;
-    padding: 8px 28px;
+    padding: 8px 24px;
     border-radius: 6px;
     font-size: 16px;
     border: none;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media (max-width: 414px) {
@@ -50,8 +51,12 @@
         text-align: center;
     }
 
-    .card-promocional button {
-        margin-top: 10px;
+    .card-promocional a {
+        margin-bottom: 20px;
+    }
+
+    .card-promocional {
+        padding: 16px 0;
     }
 }
 
@@ -142,15 +147,17 @@ header {
     width: 480px;
 }
 
-.hero button {
+.hero a {
     background-color: #d98e04;
     color: white;
     padding: 18px 80px;
     border-radius: 6px;
     font-size: 18px;
     border: none;
-    margin-top: 34px;
+    margin-top: 22px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
 }
 
 @media (max-width: 414px) {
@@ -162,11 +169,14 @@ header {
     .hero img {
         display: block;
         width: 100%;
-        margin: 40px auto;
+        margin: 24px auto;
     }
 
-    .hero button {
+    .hero a {
         width: 100%;
+        margin: 0;
+        margin-top: 14px;
+        text-align: center;
     }
 
     .hero h1 {
@@ -234,6 +244,16 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .corretoras-seguros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 42px;
+    }
+}
+
 .artigos {
     display: flex;
     justify-content: space-between;
@@ -267,15 +287,14 @@ header {
     width: 100%;
 }
 
-.artigos .btn-leia-mais {
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
 .artigos .leia-mais {
     width: 22px;
     margin-left: 10px;
+}
+
+.artigos .btn-leia-mais {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 414px) {
