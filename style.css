@@ -181,8 +181,8 @@ header {
 }
 
 .corretoras-seguros {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     margin: 86px 66px;
 }
@@ -201,6 +201,37 @@ header {
 
 .corretoras-seguros #icone-omint {
     width: 150px;
+}
+
+@media (max-width: 414px) {
+    .corretoras-seguros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 42px;
+    }
+
+    .corretoras-seguros img {
+        margin: 14px auto;
+        width: 30%;
+    }
+
+    .corretoras-seguros #icone-sulamerica {
+        width: 120px;
+    }
+
+    .corretoras-seguros #icone-mag {
+        width: 90px;
+    }
+
+    .corretoras-seguros #icone-allianz {
+        width: 160px;
+    }
+    
+    .corretoras-seguros #icone-omint {
+        width: 130px;
+    }
 }
 
 .artigos {
@@ -335,6 +366,14 @@ header {
     width: 50%;
 }
 
+.seguro-residencial .familia-mobile {
+    display: none;
+}
+
+.seguro-residencial .mulher-no-carro-mobile {
+    display: none;
+}
+
 .seguro-residencial .btn-cta-final {
     background-color: #d98e04;
     color: white;
@@ -347,8 +386,26 @@ header {
 }
 
 @media (max-width: 414px) {
+    .seguro-residencial aside {
+        border: 1.9px solid white;
+        width: 190px;
+        padding: 8px;
+    }
+    
+    .seguro-residencial aside .card-destaque img {
+        width: 24px;
+    }
+    
+    .seguro-residencial aside h6 {
+        font-size: 12px;
+    }
+    
     .img-familia {
         display: none;
+    }
+
+    .seguro-residencial-text {
+        padding: 60px 0;
     }
 
     .seguro-residencial-text {
@@ -357,6 +414,38 @@ header {
 
     .seguro-residencial .btn-cta-final {
         width: 100%;
+    }
+
+    .seguro-residencial h3 {
+        color: white;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    
+    .seguro-residencial .familia-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .seguro-residencial .mulher-no-carro-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .seguro-residencial .btn-seguro-residencial-inicial {
+        margin: 20px 0;
+    }
+
+    .seguro-residencial h4 {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 14px;
+        line-height: 28px;
+    }
+    
+    .seguro-residencial .classe-beneficios {
+        margin-top: -36px;
     }
 }
 
@@ -435,6 +524,10 @@ header {
     width: 50%;
 }
 
+.seguro-viagem .new-york-mobile {
+    display: none;
+}
+
 .seguro-viagem .btn-cta-final {
     background-color: #d98e04;
     color: white;
@@ -447,16 +540,46 @@ header {
 }
 
 @media (max-width: 414px) {
+    .seguro-viagem aside {
+        border: 1.9px solid #022728;
+        width: 170px;
+        padding: 8px;
+    }
+
+    .seguro-viagem h3 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    
+    .seguro-viagem aside .card-destaque img {
+        width: 28px;
+    }
+    
+    .seguro-viagem aside h6 {
+        font-size: 12px;
+    }
+    
     .img-new-york {
         display: none;
     }
 
     .seguro-viagem-text {
         width: 90%;
+        padding: 60px 0;
     }
 
     .seguro-viagem .btn-cta-final {
         width: 100%;
+    }
+
+    .seguro-viagem .new-york-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .seguro-viagem .classe-beneficios {
+        margin-top: -36px;
     }
 }
 
@@ -469,22 +592,26 @@ header {
 footer {
     background-color: #022728;
     font-weight: 300;
-    padding: 10px 0;
 }
 
-footer section {
-    width: 1366px;
-    margin: 65px auto;
+footer .footer-menus {
     display: flex;
     justify-content: space-between;
+    width: 1366px;
+    margin: auto;
+    padding: 60px 0;
 }
 
-footer section h4 {
+footer .footer-menus h4 {
     color: white;
 }
 
 footer .menu-secundario {
     line-height: 30px;
+}
+
+footer .menu-secundario h4 {
+    color: white;
 }
 
 footer img {
@@ -496,7 +623,6 @@ footer p {
     font-size: 14px;
     color: white;
     font-weight: 300;
-    margin-bottom: 20px;
 }
 
 footer a {
@@ -507,18 +633,42 @@ footer a {
     display: flex;
 }
 
-footer .container-direitos-reservados {
-    border: 1.9px solid rgb(120, 120, 120);
-    border-left: none;
-    border-bottom: none;
-    border-right: none;
+footer .footer-menus p {
+    padding: 10px 0;
 }
 
 footer .direitos-reservados {
+    border: 1px solid rgb(129, 129, 129);
+    padding: 20px 0;
+    border-left-color: #022728;
+    border-right-color: #022728;
+    border-bottom-color: #022728;
+}
+
+footer .direitos-reservados p {
     color: white;
     font-weight: 300;
     font-size: 14px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 414px) {
+    footer {
+        background-color: #022728;
+        font-weight: 300;
+    }
+
+    footer .footer-menus {
+        width: 80%;
+        display: block;
+        justify-content: space-between;
+    }
+
+    footer .menu-secundario {
+        padding-top: 20px;
+    }
+
+    footer .footer-menus p {
+        padding: 8px 0;
+    }
 }
