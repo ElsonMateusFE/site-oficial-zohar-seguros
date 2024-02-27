@@ -222,7 +222,7 @@ header {
     }
 
     .corretoras-seguros #icone-mag {
-        width: 90px;
+        width: 88px;
     }
 
     .corretoras-seguros #icone-allianz {
@@ -291,7 +291,7 @@ header {
 
 .seguro-residencial-text {
     width: 32%;
-    margin: auto;
+    margin-left: 14%;
 }
 
 .seguro-residencial aside {
@@ -410,6 +410,7 @@ header {
 
     .seguro-residencial-text {
         width: 90%;
+        margin: auto;
     }
 
     .seguro-residencial .btn-cta-final {
@@ -446,6 +447,11 @@ header {
     
     .seguro-residencial .classe-beneficios {
         margin-top: -36px;
+    }
+
+    .seguro-residencial .beneficios {
+        margin-top: 70px;
+        width: 96%;
     }
 }
 
@@ -580,6 +586,11 @@ header {
 
     .seguro-viagem .classe-beneficios {
         margin-top: -36px;
+    }
+
+    .seguro-viagem .beneficios {
+        margin-top: 70px;
+        width: 96%;
     }
 }
 
