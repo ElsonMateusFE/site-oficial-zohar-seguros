@@ -120,12 +120,39 @@ header {
 }
 
 .input-email {
-    width: 1366px;
+    width: 1080px;
     margin: 25px auto;
 }
 
+.input-email h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+}
+
+.input-email p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-email div {
+    justify-content: space-between;
+}
+
 .input-email input {
-    width: 200px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #4fadad;
+    padding: 8px 24px;
+    width: 60%;
+    height: 3.6em;
+    font-size: 16px;
 }
 
 .input-email button {
@@ -135,19 +162,38 @@ header {
     border-radius: 6px;
     font-size: 16px;
     border: none;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     text-decoration: none;
+    width: 30%;
+    height: 3.6em;
 }
 
 .duvidas {
     display: flex;
     width: 1366px;
-    margin: 25px auto;
+    margin: 8em auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.duvidas div {
+    width: 44%;
+}
+
+.duvidas h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.duvidas p {
+    font-size: 1.2em;
+    line-height: 30px;
 }
 
 .duvidas img {
-    width: 300px;
+    width: 50%;
 }
 
 footer {
