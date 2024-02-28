@@ -308,9 +308,23 @@ header {
     }
 }
 
-.seguro-residencial-text {
-    width: 40%;
+.seguro-residencial {
+    background-image: url(imagens/Imagem\ Teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seguro-residencial .container-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1366px;
     margin: auto;
+}
+
+.seguro-residencial-text {
+    width: 50%;
+    padding: 14% 0px;
 }
 
 .seguro-residencial aside {
@@ -338,12 +352,6 @@ header {
     font-weight: 200;
 }
 
-.seguro-residencial {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #034159;
-}
 
 .seguro-residencial h3 {
     color: white;
@@ -381,8 +389,10 @@ header {
     font-weight: 300;
 }
 
-.seguro-residencial img {
-    width: 50%;
+.seguro-residencial .img-familia img {
+    width: 50px;
+    justify-content: left;
+    position: absolute;
 }
 
 .seguro-residencial .familia-mobile {
