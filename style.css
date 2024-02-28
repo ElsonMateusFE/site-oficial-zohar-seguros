@@ -8,6 +8,10 @@
     color: #022728;
 }
 
+h3 {
+    font-weight: 900;
+}
+
 .card-promocional {
     background-color: #022728;
     padding: 12px;
@@ -308,26 +312,14 @@ header {
     }
 }
 
+/*Residencial*/
 .seguro-residencial {
-    background-image: url(imagens/Imagem\ Teste.jpg);
+    background-image: url(imagens/bg-familia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.seguro-residencial .container-texto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1366px;
-    margin: auto;
-}
-
-.seguro-residencial-text {
-    width: 50%;
-    padding: 14% 0px;
-}
-
-.seguro-residencial aside {
+/*Produto em destaque*/
+.seguro-residencial-card-destaque {
     border: 1.5px solid white;
     width: 220px;
     padding: 10px;
@@ -335,51 +327,39 @@ header {
     border-radius: 200px;
 }
 
-.seguro-residencial aside .card-destaque {
+.seguro-residencial-card-destaque {
     display: flex;
     align-items: center;
 }
 
-.seguro-residencial aside .card-destaque img {
+.seguro-residencial-card-destaque img {
     width: 26px;
     margin-right: 12px;
     margin-left: 12px;
 }
 
-.seguro-residencial aside h6 {
+.seguro-residencial-card-destaque h6 {
     color: white;
     font-size: 16px;
     font-weight: 200;
 }
 
-
-.seguro-residencial h3 {
+.seguro-residencial-card-destaque p {
     color: white;
-    font-size: 42px;
-    line-height: 40px;
-    margin-bottom: 16px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+/**/
+
+.seguro-residencial-conteudo {
+    width: 1366px;
+    margin: auto;
+    padding: 14% 0;
 }
 
-.seguro-residencial .btn-seguro-residencial-inicial {
-    background-color: #d98e04;
-    color: white;
-    padding: 8px 26px;
-    border-radius: 6px;
-    font-size: 18px;
-    border: none;
-    margin: 16px 0;
-    cursor: pointer;
-}
-
-.seguro-residencial h4 {
-    color: white;
-    font-size: 22px;
-    margin-bottom: 14px;
-}
-
-.seguro-residencial .beneficios {
-    margin-top: 70px;
-    width: 80%;
+.seguro-residencial-conteudo-textos {
+    width: 50%;
 }
 
 .seguro-residencial p {
@@ -389,145 +369,14 @@ header {
     font-weight: 300;
 }
 
-.seguro-residencial .img-familia img {
-    width: 50px;
-    justify-content: left;
-    position: absolute;
-}
-
-.seguro-residencial .familia-mobile {
-    display: none;
-}
-
-.seguro-residencial .mulher-no-carro-mobile {
-    display: none;
-}
-
-.seguro-residencial .btn-cta-final {
-    background-color: #d98e04;
+.seguro-residencial h3 {
     color: white;
-    padding: 18px 80px;
-    border-radius: 6px;
-    font-size: 18px;
-    border: none;
-    margin-top: 60px;
-    cursor: pointer;
-}
-
-@media (max-width: 414px) {
-    .seguro-residencial aside {
-        border: 1.5px solid white;
-        width: 190px;
-        padding: 8px;
-    }
-    
-    .seguro-residencial aside .card-destaque img {
-        width: 24px;
-    }
-    
-    .seguro-residencial aside h6 {
-        font-size: 12px;
-    }
-    
-    .img-familia {
-        display: none;
-    }
-
-    .seguro-residencial-text {
-        padding: 60px 0;
-    }
-
-    .seguro-residencial-text {
-        width: 90%;
-        margin: auto;
-    }
-
-    .seguro-residencial .btn-cta-final {
-        width: 100%;
-    }
-
-    .seguro-residencial h3 {
-        color: white;
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 16px;
-    }
-    
-    .seguro-residencial .familia-mobile {
-        display: block;
-        width: 100%;
-    }
-
-    .seguro-residencial .mulher-no-carro-mobile {
-        display: block;
-        width: 100%;
-    }
-
-    .seguro-residencial .btn-seguro-residencial-inicial {
-        margin: 20px 0;
-    }
-
-    .seguro-residencial h4 {
-        color: white;
-        font-size: 20px;
-        margin-bottom: 14px;
-        line-height: 28px;
-    }
-    
-    .seguro-residencial .classe-beneficios {
-        margin-top: -36px;
-    }
-
-    .seguro-residencial .beneficios {
-        margin-top: 70px;
-        width: 96%;
-    }
-}
-
-.seguro-viagem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.seguro-viagem-text {
-    width: 40%;
-    margin: auto;
-}
-
-.seguro-viagem aside {
-    border: 1.5px solid #022728;
-    width: 220px;
-    padding: 10px;
-    margin-bottom: 16px;
-    border-radius: 200px;
-}
-
-.seguro-viagem aside .card-destaque {
-    display: flex;
-    align-items: center;
-}
-
-.seguro-viagem aside .card-destaque img {
-    width: 46px;
-    margin-right: 12px;
-    margin-left: 12px;
-}
-
-.seguro-viagem aside h6 {
-    color: #022728;
-    font-size: 16px;
-    font-weight: 200;
-}
-
-.seguro-viagem h3 {
-    color: #022728;
     font-size: 42px;
     line-height: 40px;
     margin-bottom: 16px;
 }
 
-.seguro-viagem .btn-seguro-viagem-inicial {
+.seguro-residencial-btn-seguro-residencial-inicial {
     background-color: #d98e04;
     color: white;
     padding: 8px 26px;
@@ -538,32 +387,187 @@ header {
     cursor: pointer;
 }
 
-.seguro-viagem h4 {
-    color: #022728;
-    font-size: 24px;
+.seguro-residencial-beneficios {
+    margin-top: 70px;
+    width: 80%;
+}
+
+.seguro-residencial h4 {
+    color: white;
+    font-size: 22px;
     margin-bottom: 14px;
 }
 
-.seguro-viagem .beneficios {
-    margin-top: 70px;
-    width: 70%;
+.seguro-residencial-btn-cta-final {
+    background-color: #d98e04;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+/*Imagem para diveros dispositivos*/
+.seguro-residencial .mulher-no-carro-mobile {
+    display: none;
+}
+
+.familia-mobile {
+    display: none;
+}
+
+@media (max-width: 414px) {
+    .seguro-residencial-card-destaque {
+        border: 1.5px solid white;
+        width: 204px;
+        padding: 10px;
+    }
+    
+    .seguro-residencial-card-destaque img {
+        width: 26px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    
+    .seguro-residencial-card-destaque h6 {
+        font-size: 14px;
+    }
+    
+    .seguro-residencial {
+        background-image: none;
+        background-color: #034159;
+    }
+
+    .seguro-residencial-conteudo {
+        width: 90%;
+        margin: auto;
+    }
+
+    .seguro-residencial-conteudo-textos {
+        width: 100%;
+    }
+
+    .seguro-residencial-todos-beneficios {
+        margin: -3em 0;
+    }
+
+    .seguro-residencial p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    
+    .seguro-residencial h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .familia-mobile {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        border-radius: 30px 0px;
+    }
+
+    .seguro-residencial-btn-cta-final {
+        width: 100%;
+    }
+
+}
+/*Viagem*/
+.seguro-viagem {
+    background-image: url(imagens/bg-new-york.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new-york-mobile {
+    display: none;
+}
+
+/*Produto em destaque*/
+.seguro-viagem-card-destaque {
+    border: 1.5px solid #022728;
+    width: 206px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 200px;
+}
+
+.seguro-viagem-card-destaque {
+    display: flex;
+    align-items: center;
+}
+
+.seguro-viagem-card-destaque img {
+    width: 38px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.seguro-viagem-card-destaque h6 {
+    color: #022728;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.seguro-viagem-card-destaque p {
+    color: #022728;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+/**/
+
+.seguro-viagem-conteudo {
+    width: 1366px;
+    margin: auto;
+    padding: 14% 0;
+}
+
+.seguro-viagem-conteudo-textos {
+    width: 50%;
+    margin-left: 50em;
 }
 
 .seguro-viagem p {
     color: #022728;
     line-height: 24px;
     font-size: 16px;
+    font-weight: 300;
 }
 
-.seguro-viagem img {
-    width: 50%;
+.seguro-viagem h3 {
+    color: #022728;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 16px;
 }
 
-.seguro-viagem .new-york-mobile {
-    display: none;
+.seguro-viagem-btn-seguro-viagem-inicial {
+    background-color: #d98e04;
+    color: white;
+    padding: 8px 26px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin: 16px 0;
+    cursor: pointer;
 }
 
-.seguro-viagem .btn-cta-final {
+.seguro-viagem-beneficios {
+    margin-top: 70px;
+    width: 80%;
+}
+
+.seguro-viagem h4 {
+    color: #022728;
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.seguro-viagem-btn-cta-final {
     background-color: #d98e04;
     color: white;
     padding: 18px 80px;
@@ -575,60 +579,170 @@ header {
 }
 
 @media (max-width: 414px) {
-    .seguro-viagem aside {
+    .seguro-viagem-card-destaque {
         border: 1.5px solid #022728;
-        width: 170px;
-        padding: 8px;
+        width: 204px;
+        padding: 10px;
+    }
+    
+    .seguro-viagem-card-destaque img {
+        width: 26px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    
+    .seguro-viagem-card-destaque h6 {
+        font-size: 14px;
+    }
+    
+    .seguro-viagem {
+        background-image: none;
+        background-color: white;
     }
 
-    .seguro-viagem h3 {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 16px;
-    }
-    
-    .seguro-viagem aside .card-destaque img {
-        width: 28px;
-    }
-    
-    .seguro-viagem aside h6 {
-        font-size: 12px;
-    }
-    
-    .img-new-york {
-        display: none;
-    }
-
-    .seguro-viagem-text {
+    .seguro-viagem-conteudo {
         width: 90%;
-        padding: 60px 0;
+        margin: auto;
     }
 
-    .seguro-viagem .btn-cta-final {
+    .seguro-viagem-conteudo-textos {
         width: 100%;
+        margin: 0;
     }
 
-    .seguro-viagem .new-york-mobile {
+    .seguro-viagem-todos-beneficios {
+        margin: -3em 0;
+    }
+
+    .seguro-viagem p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    
+    .seguro-viagem h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .new-york-mobile {
+        width: 100%;
         display: block;
+        margin-top: 10px;
+        border-radius: 30px 0px;
+    }
+
+    .seguro-viagem-btn-cta-final {
         width: 100%;
     }
-
-    .seguro-viagem .classe-beneficios {
-        margin-top: -36px;
-    }
-
-    .seguro-viagem .beneficios {
-        margin-top: 70px;
-        width: 96%;
-    }
+}
+/*Seguro Automotivo*/
+.seguro-automotivo {
+    background-image: url(imagens/bg-seguro-automotivo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media (max-width: 414px) {
-    .img-mulher-no-carro {
-        display: none;
-    }
+.mulher-no-carro-mobile {
+    display: none;
 }
 
+/*Produto em destaque*/
+.seguro-automotivo-card-destaque {
+    border: 1.5px solid white;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 200px;
+}
+
+.seguro-automotivo-card-destaque {
+    display: flex;
+    align-items: center;
+}
+
+.seguro-automotivo-card-destaque img {
+    width: 26px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.seguro-automotivo-card-destaque h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.seguro-automotivo-card-destaque p {
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+/**/
+
+.seguro-automotivo-conteudo {
+    width: 1366px;
+    margin: auto;
+    padding: 14% 0;
+}
+
+.seguro-automotivo-conteudo-textos {
+    width: 50%;
+}
+
+.seguro-automotivo p {
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.seguro-automotivo h3 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.seguro-automotivo-btn-seguro-automotivo-inicial {
+    background-color: #d98e04;
+    color: white;
+    padding: 8px 26px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.seguro-automotivo-beneficios {
+    margin-top: 70px;
+    width: 80%;
+}
+
+.seguro-automotivo h4 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.seguro-automotivo-btn-cta-final {
+    background-color: #d98e04;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+/*Imagem para diveros dispositivos*/
+.seguro-automotivo .mulher-no-carro-mobile {
+    display: none;
+}
+
+/*SA*/
 footer {
     background-color: #022728;
     font-weight: 300;
