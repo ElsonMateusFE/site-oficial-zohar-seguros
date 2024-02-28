@@ -51,8 +51,8 @@
         text-align: center;
     }
 
-    .card-promocional a {
-        margin-bottom: 20px;
+    .card-promocional p {
+        margin-bottom: 22px;
     }
 
     .card-promocional {
@@ -309,12 +309,12 @@ header {
 }
 
 .seguro-residencial-text {
-    width: 32%;
-    margin-left: 14%;
+    width: 40%;
+    margin: auto;
 }
 
 .seguro-residencial aside {
-    border: 1.9px solid white;
+    border: 1.5px solid white;
     width: 220px;
     padding: 10px;
     margin-bottom: 16px;
@@ -406,7 +406,7 @@ header {
 
 @media (max-width: 414px) {
     .seguro-residencial aside {
-        border: 1.9px solid white;
+        border: 1.5px solid white;
         width: 190px;
         padding: 8px;
     }
@@ -481,12 +481,12 @@ header {
 }
 
 .seguro-viagem-text {
-    width: 38%;
+    width: 40%;
     margin: auto;
 }
 
 .seguro-viagem aside {
-    border: 1px solid #022728;
+    border: 1.5px solid #022728;
     width: 220px;
     padding: 10px;
     margin-bottom: 16px;
@@ -566,7 +566,7 @@ header {
 
 @media (max-width: 414px) {
     .seguro-viagem aside {
-        border: 1.9px solid #022728;
+        border: 1.5px solid #022728;
         width: 170px;
         padding: 8px;
     }
