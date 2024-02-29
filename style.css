@@ -57,7 +57,7 @@ h3 {
     background-color: #d98e04;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .card-promocional div {
         margin: 6px 0px;
         display: block;
@@ -78,15 +78,16 @@ header {
     margin: 25px auto;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     header {
         width: 90%;
     }
 }
 
-.menu-principal {
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-menu {
@@ -106,36 +107,31 @@ header {
     width: 145px;
 }
 
-.menu-principal menu ul {
+.nav-list {
     display: flex;
     list-style: none;
 }
 
-.menu-principal menu a {
-    margin: 0 10px;
+.nav-list li {
+    margin-left: 30px
+}
+
+.nav-list a {
     font-weight: 300;
     text-decoration: none;
 }
 
-.menu-principal menu a img {
-    margin-left: 4px;
-}
-
-@media (max-width: 414px) {
-    body {
-        overflow-x: hidden;
+@media (max-width: 999px) {
+    nav {
+        margin-bottom: 40px;
     }
 
-    .menu-principal menu ul {
+    .nav-list {
         display: none;
     }
 
     .mobile-menu {
         display: block;
-    }
-
-    .menu-principal .logo-zohar {
-        margin-bottom: 40px;
     }
 }
 
@@ -217,7 +213,7 @@ header {
     background-color: #d98e04;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .hero {
         display: block;
         margin: 0;
@@ -270,7 +266,7 @@ header {
     width: 150px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .corretoras-seguros {
         display: flex;
         flex-wrap: wrap;
@@ -298,16 +294,6 @@ header {
     
     .corretoras-seguros #icone-omint {
         width: 130px;
-    }
-}
-
-@media (max-width: 768px) {
-    .corretoras-seguros {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-        margin-bottom: 42px;
     }
 }
 
@@ -354,7 +340,7 @@ header {
     align-items: center;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .artigos {
         display: block;
     }
@@ -493,7 +479,7 @@ header {
     display: none;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .seguro-residencial-card-destaque {
         border: 1.5px solid white;
         width: 204px;
@@ -676,7 +662,7 @@ header {
     background-color: #d98e04;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .seguro-viagem-card-destaque {
         border: 1.5px solid #022728;
         width: 204px;
@@ -858,7 +844,7 @@ header {
     background-color: #d98e04;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .seguro-automotivo-card-destaque {
         border: 1.5px solid white;
         width: 204px;
@@ -979,7 +965,7 @@ footer .direitos-reservados p {
     text-align: center;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     footer {
         background-color: #022728;
         font-weight: 300;
