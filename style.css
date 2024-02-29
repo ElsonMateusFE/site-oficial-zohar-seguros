@@ -48,6 +48,15 @@ h3 {
     text-decoration: none;
 }
 
+.card-promocional a:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.card-promocional a:active {
+    background-color: #d98e04;
+}
+
 @media (max-width: 414px) {
     .card-promocional div {
         margin: 6px 0px;
@@ -80,6 +89,19 @@ header {
     justify-content: space-between;
 }
 
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 4px;
+    background-color: #022728;
+    margin: 6px;
+    border-radius: 100px;
+}
+
 .menu-principal .logo-zohar {
     width: 145px;
 }
@@ -95,8 +117,13 @@ header {
 }
 
 @media (max-width: 414px) {
+
     .menu-principal menu a {
         display: none;
+    }
+
+    .mobile-menu {
+        display: block;
     }
 
     .menu-principal .logo-zohar {
@@ -112,6 +139,15 @@ header {
     font-size: 18px;
     border: none;
     cursor: pointer;
+}
+
+.btn-contato:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.btn-contato:active {
+    background-color: #d98e04;
 }
 
 .menu-principal menu {
@@ -148,7 +184,7 @@ header {
 }
 
 .hero img {
-    width: 480px;
+    width: 100%;
 }
 
 .hero a {
@@ -162,6 +198,15 @@ header {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.hero a:active {
+    background-color: #d98e04;
 }
 
 @media (max-width: 414px) {
@@ -184,8 +229,8 @@ header {
     }
 
     .hero h1 {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 36px;
     }
 
     .hero p {
@@ -389,6 +434,15 @@ header {
     text-decoration: none;
 }
 
+.seguro-residencial-btn-seguro-residencial-inicial:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-residencial-btn-seguro-residencial-inicial:active {
+    background-color: #d98e04;
+}
+
 .seguro-residencial-beneficios {
     margin-top: 70px;
     width: 80%;
@@ -411,6 +465,15 @@ header {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+
+.seguro-residencial-btn-cta-final:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-residencial-btn-cta-final:active {
+    background-color: #d98e04;
 }
 
 /*Imagem para diveros dispositivos*/
@@ -562,6 +625,15 @@ header {
     text-decoration: none;
 }
 
+.seguro-viagem-btn-seguro-viagem-inicial:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-viagem-btn-seguro-viagem-inicial:active {
+    background-color: #d98e04;
+}
+
 .seguro-viagem-beneficios {
     margin-top: 70px;
     width: 80%;
@@ -584,6 +656,15 @@ header {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+
+.seguro-viagem-btn-cta-final:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-viagem-btn-cta-final:active {
+    background-color: #d98e04;
 }
 
 @media (max-width: 414px) {
@@ -725,6 +806,15 @@ header {
     text-decoration: none;
 }
 
+.seguro-automotivo-btn-seguro-automotivo-inicial:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-automotivo-btn-seguro-automotivo-inicial:active {
+    background-color: #d98e04;
+}
+
 .seguro-automotivo-beneficios {
     margin-top: 70px;
     width: 80%;
@@ -747,6 +837,15 @@ header {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+}
+
+.seguro-automotivo-btn-cta-final:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-automotivo-btn-cta-final:active {
+    background-color: #d98e04;
 }
 
 @media (max-width: 414px) {

@@ -44,6 +44,15 @@
     text-decoration: none;
 }
 
+.card-promocional a:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.card-promocional a:active {
+    background-color: #d98e04;
+}
+
 @media (max-width: 414px) {
     .card-promocional div {
         margin: 6px 0px;
@@ -110,6 +119,15 @@ header {
     cursor: pointer;
 }
 
+.btn-contato:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.btn-contato:active {
+    background-color: #d98e04;
+}
+
 .menu-principal menu {
     display: flex;
     align-items: center;
@@ -118,9 +136,9 @@ header {
 .menu-principal menu a img {
     width: 10px;
 }
-
+/**/
 .input-email {
-    width: 1080px;
+    width: 1090px;
     margin: 25px auto;
 }
 
@@ -141,25 +159,27 @@ header {
 }
 
 .input-email div {
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
 }
 
 .input-email input {
-    border-radius: 6px;
+    border-radius: 6px 0px 0px 6px;
     border: none;
     background-color: #f2f2f2;
     color: #4fadad;
     padding: 8px 24px;
-    width: 60%;
+    width: 70%;
     height: 3.6em;
     font-size: 16px;
 }
 
 .input-email button {
     background-color: #d98e04;
+    display: inline;
     color: white;
     padding: 8px 24px;
-    border-radius: 6px;
+    border-radius: 0px 6px 6px 0px;
     font-size: 16px;
     border: none;
     font-weight: 400;
@@ -167,6 +187,48 @@ header {
     text-decoration: none;
     width: 30%;
     height: 3.6em;
+}
+
+.input-email button:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.input-email button:active {
+    background-color: #d98e04;
+}
+
+@media (max-width: 414px) {
+    .input-email {
+        width: 90%;
+    }
+
+    .input-email h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+    
+    .input-email p {
+        font-size: 16px;
+    }
+
+    .input-email div {
+        display: block;
+    }
+
+    .input-email div input {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .input-email div button {
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
 }
 
 .duvidas {
@@ -179,6 +241,30 @@ header {
 
 .duvidas div {
     width: 44%;
+}
+
+.duvidas-escudos-beneficios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duvidas-escudos-beneficios div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.duvidas-escudos-beneficios h3 {
+    margin-top: 10px;
+    font-weight: 400;
+    color: #3b7f7c;
+}
+
+.duvidas-escudos-beneficios div img {
+    width: 30%;
+}
+
+.familia-interracial-mobile {
+    display: none;
 }
 
 .duvidas h2 {
@@ -194,6 +280,42 @@ header {
 
 .duvidas img {
     width: 50%;
+}
+
+@media (max-width: 414px) {
+    .duvidas {
+        display: block;
+        width: 90%;
+        margin: 4em auto;
+    }
+
+    .duvidas div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .duvidas h2 {
+        font-size: 34px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .duvidas img {
+        width: 100%;
+    }
+
+    .duvidas-escudos-beneficios div {
+        margin-top: 20px;
+    }
+
+    .familia-interracial-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .familia-interracial-desktop {
+        display: none;
+    }
 }
 
 footer {
