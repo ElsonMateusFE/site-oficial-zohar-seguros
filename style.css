@@ -355,8 +355,9 @@ nav {
 .seguro-residencial {
     background-image: url(imagens/bg-familia.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
+
 /*Produto em destaque*/
 .seguro-residencial-card-destaque {
     border: 1.5px solid white;
@@ -541,7 +542,7 @@ nav {
 .seguro-viagem {
     background-image: url(imagens/bg-new-york.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .new-york-mobile {
@@ -724,7 +725,7 @@ nav {
 .seguro-automotivo {
     background-image: url(imagens/bg-seguro-automotivo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .mulher-no-carro-mobile {
