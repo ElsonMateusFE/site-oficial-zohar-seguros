@@ -299,6 +299,7 @@ nav {
 .artigos {
     width: 1366px;
     margin: auto;
+    margin-bottom: 8%;
     display: flex;
     justify-content: space-between;
 }
@@ -375,7 +376,7 @@ nav {
 }
 
 .seguro-card {
-    margin: 80px auto;
+    margin: auto;
     padding: 80px 0;
 }
 
@@ -450,8 +451,30 @@ nav {
     text-align: center;
 }
 
+#bg-color-residencia {
+    background-color: #034159;
+    height: 100%;
+    padding: 80px 0;
+}
+
+#bg-color-residencia h4 {
+    color: white;
+}
+
+#bg-color-residencia h3 {
+    color: white;
+}
+
+#bg-color-residencia h2 {
+    color: white;
+}
+
+#bg-color-residencia p {
+    color: white;
+}
+
 #bg-color-viagem {
-    background-color: #edeeef;
+    margin: 8% auto;
 }
 
 /**/
