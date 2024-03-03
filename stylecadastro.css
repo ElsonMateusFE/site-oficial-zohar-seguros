@@ -69,7 +69,7 @@
     background-color: #d98e04;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .input-email {
         width: 90%;
     }
@@ -153,7 +153,7 @@
     width: 50%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 999px) {
     .duvidas {
         display: block;
         width: 90%;

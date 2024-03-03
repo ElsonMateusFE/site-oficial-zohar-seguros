@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .menu-container {
+      position: relative;
+    }
+
+    .hamburger-menu {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: transform 0.3s;
+    }
+
+    .line:nth-child(2) {
+      transform-origin: center;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .menu-content {
+      text-align: center;
+      color: #fff;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      font-size: 24px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+  </style>
+  <title>Menu Hambúrguer</title>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="hamburger-menu" id="hamburger-menu">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="menu-content">
+        <div class="close-btn" id="close-btn">X</div>
+        <ul>
+          <li>Opção 1</li>
+          <li>Opção 2</li>
+          <li>Opção 3</li>
+          <li>Opção 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const overlay = document.getElementById('overlay');
+      const closeBtn = document.getElementById('close-btn');
+      const line1 = document.getElementById('line1');
+      const line2 = document.getElementById('line2');
+
+      hamburgerMenu.addEventListener('click', function () {
+        overlay.style.display = 'flex';
+        setTimeout(() => {
+          overlay.style.opacity = '1';
+          line1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+          line2.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+        }, 50);
+      });
+
+      closeBtn.addEventListener('click', function () {
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+          line1.style.transform = 'none';
+          line2.style.transform = 'none';
+        }, 300);
+      });
+
+      overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) {
+          closeBtn.click(); // Simula o clique no botão 'X'
+        }
+      });
+    });
+  </script>
+</body>
+</html>

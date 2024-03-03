@@ -59,17 +59,19 @@ h3 {
 
 @media (max-width: 999px) {
     .card-promocional div {
-        margin: 6px 0px;
         display: block;
         text-align: center;
     }
 
     .card-promocional p {
         margin-bottom: 22px;
+        margin: auto;
+        margin-bottom: 16px;
+        width: 96%;
     }
 
     .card-promocional {
-        padding: 16px 0;
+        padding: 22px 0;
     }
 }
 
@@ -122,6 +124,10 @@ nav {
 }
 
 @media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+      }
+
     nav {
         margin-bottom: 40px;
     }
@@ -449,6 +455,15 @@ nav {
     font-weight: 100;
     width: 100%;
     text-align: center;
+}
+
+.seguro-card-conteudo-button:hover {
+    background-color: #e99a08;
+    transition-duration: .5s;
+}
+
+.seguro-card-conteudo-button:active {
+    background-color: #d98e04;
 }
 
 #bg-color-residencia {
