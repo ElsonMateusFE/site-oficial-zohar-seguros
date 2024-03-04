@@ -114,42 +114,66 @@
             width: 145px;
         }
 
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: #022728;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
+        .nav-list {
+            display: flex;
+            list-style: none;
         }
 
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 40px;
-            font-size: 36px;
-            margin-left: 50px;
+        .nav-list li {
+            margin-left: 30px
+        }
+
+        .nav-list a {
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        @media (max-width: 999px) {
+            nav {
+                margin-bottom: 40px;
+            }
+
+            .nav-list {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        .btn-contato {
+            background-color: #d98e04;
             color: white;
+            padding: 8px 44px;
+            border-radius: 6px;
+            font-size: 18px;
+            border: none;
             cursor: pointer;
         }
 
-        .sidenav .closebtn:hover {
-            color: #e99a08;
+        .btn-contato:hover {
+            background-color: #e99a08;
+            transition-duration: .5s;
         }
 
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
+        .btn-contato:active {
+            background-color: #d98e04;
+        }
+
+        .menu-principal menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-principal menu a img {
+            width: 10px;
         }
     </style>
 </head>
 
 <body>
+
     <section class="card-promocional">
         <div>
             <p><strong>Proteja sua casa por apenas 50 centavos por dia. </strong>Adquira agora e viva com tranquilidade.</p>
@@ -162,30 +186,32 @@
             <a href="home.html">
                 <img src="./icones e logos/logo-oficial.svg" alt="Logo Zohar Seguros" class="logo-zohar">
             </a>
-            <div class="mobile-menu" onclick="openNav()">
+            <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#">Artigos</a>
+                </li>
+                <li>
+                    <a href="">Produtos</a>
+                </li>
+                <li>
+                    <a href="./cadastro.html" class="btn-contato">Fale conosco</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Menu lateral responsivo -->
-    <div id="mySidenav" class="sidenav">
-        <span class="closebtn" onclick="closeNav()">&times;</span>
-    </div>
+    <section class="bg-color-artigos">
+        <!-- Conteúdo dos artigos aqui -->
+    </section>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "300px";
-            document.body.style.overflow = "hidden"; /* Impede a rolagem do corpo */
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.overflow = "visible"; /* Permite a rolagem do corpo */
-        }
-    </script>
 </body>
 
 </html>

@@ -26,7 +26,6 @@ h3 {
     margin: auto;
 }
 
-
 .card-promocional strong {
     color: white;
 }
@@ -115,12 +114,13 @@ nav {
 }
 
 .nav-list li {
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .nav-list a {
     font-weight: 300;
     text-decoration: none;
+    text-align: left; /* Alinhamento à esquerda */
 }
 
 @media (max-width: 999px) {
@@ -163,6 +163,60 @@ nav {
 
 .menu-principal menu a img {
     width: 10px;
+}
+
+/* Estilos para o menu lateral responsivo */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #022728;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px; /* Mudança para mais para o lado */
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 16px;
+    }
+
+    .btn-contato {
+        background-color: #d98e04;
+        color: white;
+        padding: 8px 44px;
+        border-radius: 6px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+    }
 }
 
 .hero {
