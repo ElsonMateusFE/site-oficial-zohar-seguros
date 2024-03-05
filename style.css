@@ -165,8 +165,10 @@ nav {
     width: 10px;
 }
 
-/* Estilos para o menu lateral responsivo */
+/* Adicione o seguinte estilo específico para o menu lateral */
 .sidenav {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 0;
     position: fixed;
@@ -180,22 +182,29 @@ nav {
 }
 
 .sidenav a {
-    padding: 8px 16px;
+    padding: 10px 16px; /* Aumenta o espaçamento vertical do texto */
     text-decoration: none;
     font-size: 18px;
     color: white;
     display: block;
     transition: 0.3s;
     text-align: left; /* Alinhamento à esquerda */
+    width: 90%;
+    margin: 6px auto;
+    text-align: center;
 }
-
 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 10px; /* Mudança para mais para o lado */
-    font-size: 60px;
+    right: -35%; /* Mudança para mais para o lado */
+    font-size: 56px;
     margin-left: 50px;
+}
+
+.sidenav .btn-contato {
+    margin-top: auto; /* Empurra o botão para a parte inferior do menu lateral */
+    margin-bottom: 20px; /* Adiciona mais espaçamento na parte inferior do botão */
 }
 
 @media screen and (max-height: 450px) {
@@ -205,17 +214,6 @@ nav {
 
     .sidenav a {
         font-size: 16px;
-    }
-
-    .btn-contato {
-        background-color: #d98e04;
-        color: white;
-        padding: 8px 44px;
-        border-radius: 6px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
-        width: 50%;
     }
 }
 
