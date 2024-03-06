@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página</title>
     <style>
+        @import url("https://use.typekit.net/hwn4thy.css");
+        
         * {
             margin: 0;
             padding: 0;
@@ -128,6 +130,10 @@
             text-decoration: none;
         }
 
+        .menu-lateral {
+            display: none;
+        }
+
         @media (max-width: 999px) {
             nav {
                 margin-bottom: 40px;
@@ -139,6 +145,101 @@
 
             .mobile-menu {
                 display: block;
+            }
+
+            /* Menu Responsivo Lateral*/
+            .menu-lateral {
+                top: 0;
+                right: 0;
+                position: absolute;
+                background-color: #022728;
+                height: 100vh;
+                width: 100vw;
+                display: block;
+            }
+
+            .menu-lateral section {
+                width: 90%;
+                margin: 26px auto;
+            }
+
+            .menu-lateral section #icone-x {
+                width: 20px;
+                right: 8px;
+                top: 21px;
+            }
+
+            .menu-lateral section h2 {
+                color: white;
+                text-align: center;
+                margin: 40px 0;
+                font-size: 24px;
+            }
+
+            .menu-lateral ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .menu-lateral li {
+                background-color: #31363f;
+                padding: 18px;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            .menu-lateral li:hover {
+                background-color: #464d58;
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%;
+                transition: all .5s;
+            }
+
+            .menu-lateral ul li a {
+                text-decoration: none;
+            }
+
+            .menu-lateral ul li a {
+                display: block;
+            }
+
+            .menu-lateral ul li a {
+                margin: auto;
+                text-align: center;
+            }
+
+            .menu-lateral ul li img {
+                width: 36px;
+            }
+
+            .menu-lateral ul li h4 {
+                color: white;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+
+            .menu-lateral ul li p {
+                color: white;
+                line-height: 18px;
+                font-size: 11px;
+            }
+
+            .btn-contato-responsivo {
+                background-color: #d98e04;
+                color: white;
+                padding: 14px 44px;
+                border-radius: 6px;
+                font-size: 18px;
+                border: none;
+                width: 100%;
+                display: block;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 40px;
             }
         }
 
@@ -173,7 +274,6 @@
 </head>
 
 <body>
-
     <section class="card-promocional">
         <div>
             <p><strong>Proteja sua casa por apenas 50 centavos por dia. </strong>Adquira agora e viva com tranquilidade.</p>
@@ -191,6 +291,36 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+            <div class="menu-lateral">
+                <section>
+                    <img src="icones e logos/icone-x.svg" alt="" id="icone-x">
+                    <h2>CONHEÇA NOSSOS SEGUROS</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="icones e logos/icone-casa-branca.svg" alt="">
+                                <h4>Seguro residencial</h4>
+                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="icones e logos/icone-casa-branca.svg" alt="">
+                                <h4>Seguro residencial</h4>
+                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="icones e logos/icone-casa-branca.svg" alt="">
+                                <h4>Seguro residencial</h4>
+                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="./cadastro.html" class="btn-contato-responsivo">Fale conosco</a>
+                </section>
+            </div>
             <ul class="nav-list">
                 <li>
                     <a href="#">Sobre nós</a>
@@ -207,11 +337,6 @@
             </ul>
         </nav>
     </header>
-
-    <section class="bg-color-artigos">
-        <!-- Conteúdo dos artigos aqui -->
-    </section>
-
 </body>
 
 </html>

@@ -8,37 +8,95 @@
     <link rel="shortcut icon" href="icones e logos/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <body>
-        <section class="input-email">
-            <h1>Agradecemos por escolher a Zohar Seguros para cuidar do seu bem-estar!</h1>
-            <p>Coloque seu e-mail e clique no botão abaixo e entre em contato conosco pelo WhatsApp. Estamos aqui para responder a todas as suas perguntas e oferecer a melhor assistência.</p>
-            <div>
-                <input type="email" name="" id="" placeholder="Digite seu melhor e-mail">
-                <button>Entrar em contato por WhatsApp</button>
+    <section class="card-promocional">
+        <div>
+            <p><strong>Proteja sua casa por apenas 50 centavos por dia. </strong>Adquira agora e viva com tranquilidade.</p>
+            <a href="./cadastro.html">Fale com um especialista</a>
+        </div>
+    </section>
+    <header>
+        <nav class="menu-principal">
+            <a href="home.html">
+                <img src="./icones e logos/logo-oficial.svg" alt="Logo Zohar Seguros" class="logo-zohar">
+            </a>
+            <div class="mobile-menu" onclick="openNav()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </section>
-        <section class="duvidas">
+            <ul class="nav-list">
+                <li>
+                    <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#">Artigos</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="./cadastro.html" class="btn-contato">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Menu lateral responsivo -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Artigos</a>
+        <a href="#">Produtos</a>
+        <a href="./cadastro.html" class="btn-contato">Fale conosco</a>
+    </div>
+    <section class="input-email">
+        <h1>Agradecemos por escolher a Zohar Seguros para cuidar do seu bem-estar!</h1>
+        <p>Coloque seu e-mail e clique no botão abaixo e entre em contato conosco pelo WhatsApp. Estamos aqui para responder a todas as suas perguntas e oferecer a melhor assistência.</p>
+        <div>
+            <input type="email" name="" id="" placeholder="Digite seu melhor e-mail">
+            <button>Entrar em contato por WhatsApp</button>
+        </div>
+    </section>
+    <section class="duvidas">
+        <div>
+            <h2>Ainda em dúvida sobre o seguro?</h2>
+            <img src="imagens/familia-interracial.jpg" alt="" class="familia-interracial-mobile">
+            <p>Por que você deveria contratar um seguro hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <br><br>Por que você deveria contratar um seguro hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
+        </div>
+        <img src="imagens/familia-interracial.jpg" alt="" class="familia-interracial-desktop">
+    </section>
+    <footer>
+        <div class="footer-menus">
             <div>
-                <h2>Ainda em dúvida sobre o seguro?</h2>
-                <img src="imagens/familia-interracial.jpg" alt="" class="familia-interracial-mobile">
-                <p>Por que você deveria contratar um seguro hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <br><br>Por que você deveria contratar um seguro hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
-                <section class="duvidas-escudos-beneficios">
-                    <div>
-                        <img src="icones e logos/escudo.svg" alt="">
-                        <h3>Lorem ipsum dolor.</h3>
-                    </div>
-                    <div>
-                        <img src="icones e logos/escudo.svg" alt="">
-                        <h3>Lorem ipsum dolor.</h3>
-                    </div>
-                    <div>
-                        <img src="icones e logos/escudo.svg" alt="">
-                        <h3>Lorem ipsum dolor.</h3>
-                    </div>
-                </section>
+                <a href="home.html">
+                    <img src="./icones e logos/logo-zohar-branca.svg" alt="">
+                </a>
+                <p>Cuide de quem importa, conecte-se<br>com a segurança Zohar.</p>
+                <p>Faça seu seguro de forma fácil,<br>online e segura.</p>
+                <p>CNPJ: 35.702.399/0001-37</p>
             </div>
-            <img src="imagens/familia-interracial.jpg" alt="" class="familia-interracial-desktop">
-        </section>
-    </body>
+            <div class="menu-secundario">
+                <h4>Entre em contato</h4>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+            <div class="menu-secundario">
+                <h4>Redes Sociais</h4>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Tiktok</a>
+            </div>
+            <div class="menu-secundario">
+                <h4>Produtos</h4>
+                <a href="#">Seguro Residencial</a>
+                <a href="#">Seguro Automotivo</a>
+                <a href="#">Seguro Viagem</a>
+            </div>
+        </div>
+        <div class="direitos-reservados">
+            <p>Zohar Seguros - 2024 © Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="menu-hamburgue.js"></script>
 </body>
 </html>
