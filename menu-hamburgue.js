@@ -1,9 +1,18 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    document.body.style.overflow = "hidden"; /* Impede a rolagem do corpo */
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuLateral = document.querySelector('.menu-lateral');
+    const iconeX = document.getElementById('icone-x');
+    const body = document.body;
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.body.style.overflow = "visible"; /* Permite a rolagem do corpo */
-}
+    mobileMenu.addEventListener('click', function () {
+        if (window.innerWidth < 1000) {
+            menuLateral.style.display = 'block';
+            body.classList.add('menu-lateral-aberta');
+        }
+    });
+
+    iconeX.addEventListener('click', function () {
+        menuLateral.style.display = 'none';
+        body.classList.remove('menu-lateral-aberta');
+    });
+});

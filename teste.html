@@ -155,7 +155,7 @@
                 background-color: #022728;
                 height: 100vh;
                 width: 100vw;
-                display: block;
+                display: none;
             }
 
             .menu-lateral section {
@@ -164,15 +164,19 @@
             }
 
             .menu-lateral section #icone-x {
-                width: 20px;
-                right: 8px;
-                top: 21px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 20px;
+                width: 60px;
+                cursor: pointer;
             }
 
             .menu-lateral section h2 {
                 color: white;
                 text-align: center;
-                margin: 40px 0;
+                margin-top: 90px;
+                margin-bottom: 40px;
                 font-size: 24px;
             }
 
@@ -192,9 +196,6 @@
 
             .menu-lateral li:hover {
                 background-color: #464d58;
-                padding: 20px;
-                border-radius: 10px;
-                width: 100%;
                 transition: all .5s;
             }
 
@@ -291,7 +292,7 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <div class="menu-lateral">
+            <div class="menu-lateral" id="mySidenav" class="sidenav">
                 <section>
                     <img src="icones e logos/icone-x.svg" alt="" id="icone-x">
                     <h2>CONHEÇA NOSSOS SEGUROS</h2>
@@ -337,6 +338,24 @@
             </ul>
         </nav>
     </header>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuLateral = document.querySelector('.menu-lateral');
+            const iconeX = document.getElementById('icone-x');
+            const body = document.body;
+
+            mobileMenu.addEventListener('click', function () {
+                menuLateral.style.display = 'block';
+                body.classList.add('menu-lateral-aberta');
+            });
+
+            iconeX.addEventListener('click', function () {
+                menuLateral.style.display = 'none';
+                body.classList.remove('menu-lateral-aberta');
+            });
+        });
+    </script>
 </body>
 
 </html>

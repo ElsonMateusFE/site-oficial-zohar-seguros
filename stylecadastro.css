@@ -8,6 +8,10 @@
     color: #022728;
 }
 
+body.menu-lateral-aberta {
+    overflow: hidden;
+}
+
 h3 {
     font-weight: 900;
 }
@@ -123,6 +127,10 @@ nav {
     text-align: left; /* Alinhamento à esquerda */
 }
 
+.menu-lateral {
+    display: none;
+}
+
 @media (max-width: 999px) {
     nav {
         margin-bottom: 40px;
@@ -134,6 +142,102 @@ nav {
 
     .mobile-menu {
         display: block;
+    }
+
+    /* Menu Responsivo Lateral*/
+    .menu-lateral {
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: #022728;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+    }
+
+    .menu-lateral section {
+        width: 90%;
+        margin: 26px auto;
+    }
+
+    .menu-lateral section #icone-x {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        width: 60px;
+        cursor: pointer;
+    }
+
+    .menu-lateral section h2 {
+        color: white;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .menu-lateral ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .menu-lateral li {
+        background-color: #31363f;
+        padding: 18px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .menu-lateral li:hover {
+        background-color: #464d58;
+        transition: all .5s;
+    }
+
+    .menu-lateral ul li a {
+        text-decoration: none;
+    }
+
+    .menu-lateral ul li a {
+        display: block;
+    }
+
+    .menu-lateral ul li a {
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu-lateral ul li img {
+        width: 36px;
+    }
+
+    .menu-lateral ul li h4 {
+        color: white;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .menu-lateral ul li p {
+        color: white;
+        line-height: 18px;
+        font-size: 11px;
+    }
+
+    .btn-contato-responsivo {
+        background-color: #d98e04;
+        color: white;
+        padding: 14px 44px;
+        border-radius: 6px;
+        font-size: 18px;
+        border: none;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 40px;
     }
 }
 
@@ -163,58 +267,6 @@ nav {
 
 .menu-principal menu a img {
     width: 10px;
-}
-
-/* Adicione o seguinte estilo específico para o menu lateral */
-.sidenav {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #022728;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 10px 16px; /* Aumenta o espaçamento vertical do texto */
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    text-align: left; /* Alinhamento à esquerda */
-    width: 90%;
-    margin: 6px auto;
-    text-align: center;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: -35%; /* Mudança para mais para o lado */
-    font-size: 56px;
-    margin-left: 50px;
-}
-
-.sidenav .btn-contato {
-    margin-top: auto; /* Empurra o botão para a parte inferior do menu lateral */
-    margin-bottom: 20px; /* Adiciona mais espaçamento na parte inferior do botão */
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 16px;
-    }
 }
 
 .input-email {
