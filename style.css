@@ -33,6 +33,7 @@ h3 {
 .card-promocional p {
     font-weight: 300;
     color: white;
+    line-height: 19px;
 }
 
 .card-promocional a {
