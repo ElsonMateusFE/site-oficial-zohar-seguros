@@ -240,6 +240,15 @@ nav {
         text-decoration: none;
         margin-top: 40px;
     }
+
+    .btn-contato-responsivo:hover {
+        background-color: #e99a08;
+        transition-duration: .5s;
+    }
+    
+    .btn-contato-responsivo:active {
+        background-color: #d98e04;
+    }
 }
 
 .btn-contato {
