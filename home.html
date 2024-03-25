@@ -26,13 +26,10 @@
             </div>
             <ul class="nav-list">
                 <li>
-                    <a href="#">Sobre nós</a>
+                    <a href="#sobre-nos">Sobre nós</a>
                 </li>
                 <li>
-                    <a href="#">Artigos</a>
-                </li>
-                <li>
-                    <a href="#">Produtos</a>
+                    <a href="#produtos">Produtos</a>
                 </li>
                 <li>
                     <a href="./cadastro.html" class="btn-contato">Fale conosco</a>
@@ -42,12 +39,12 @@
         <section class="hero">
             <div class="headline">
                 <h1>Cuide do que importa, conecte-se com a segurança Zohar.</h1>
-                <p>Conquiste novos clientes com a principal marca de marketing por e-mail e automações*</p>
+                <p>Nossa jornada é marcada pela inovação, com uma abordagem ousada e diferenciada, refletida em nossa identidade visual marcante e em nosso compromisso com um atendimento personalizado.</p>
                 <a href="./cadastro.html">Contrate um seguro</a>
             </div>
             <img src="./imagens/imagem-hero.jpg" alt="">
         </section>
-        <section class="produtos">
+        <section id="produtos">
             <section class="produto-seguro">
                 <a href="#">
                     <img src="icones e logos/icone-seguro-saude.svg" alt="">
@@ -79,21 +76,16 @@
                 </a>
             </section>
         </section>
-        <section class="corretoras-seguros" style="display: none;">
-            <img src="icones e logos/sulamerica.svg" alt="" id="icone-sulamerica">
-            <img src="icones e logos/mag-seguros.svg" alt="" id="icone-mag">
-            <img src="icones e logos/porto-seguro.svg" alt="" id="icone-porto">
-            <img src="icones e logos/allianz.svg" alt="" id="icone-allianz">
-            <img src="icones e logos/omint.svg" alt="" id="icone-omint">
-        </section>
-        <section class="sobre-nos">
+    </header>
+    <section id="sobre-nos">
+        <div class="dimensao-sobre-nos">
             <img src="icones e logos/icone-seguração.svg" alt="">
             <h3>Quem somos</h3>
             <h2>Nossa Forma de Ser Empresa</h2>
             <p>Inspirados por Mateus, Américo e Heleni, desafiamos o convencional com uma abordagem inovadora. Nossa missão vai além da proteção financeira, buscamos proporcionar tranquilidade e bem-estar. Venha conhecer nossa história e descubra como estamos revolucionando o mercado.
             </p>
-        </section>
-    </header>
+        </div>
+    </section>
     <!-- Menu lateral responsivo -->
     <div class="menu-lateral" id="mySidenav" class="sidenav">
         <section>
@@ -125,44 +117,13 @@
             <a href="./cadastro.html" class="btn-contato-responsivo">Fale conosco</a>
         </section>
     </div>
-    <section class="bg-color-artigos" style="display: none;">
-        <div class="artigos">
-            <div>
-                <img src="./imagens/familia-em-frente-da-casa.jpg" alt="">
-                <h3>A Verdade Chocante sobre Não Ter Seguro para sua Casa!</h3>
-                <p>Descubra os horrores que podem acontecer quando sua casa está desprotegida. Incêndios, inundações e roubos podem devastar sua vida, mas um seguro residencial robusto é sua linha de defesa contra o caos...</p>
-                <a href="#" class="btn-leia-mais">
-                    Contrate um seguro
-                    <img src="./icones e logos/seta-leia-mais.svg" alt="" class="leia-mais">
-                </a>
-            </div>
-            <div>
-                <img src="./imagens/asa-do-aviao.jpg" alt="">
-                <h3>A Terrível Verdade de Viajar Sem Proteção!</h3>
-                <p>Embarque em uma jornada de horror ao descobrir as histórias de viajantes desprotegidos. Acidentes, doenças e perdas de bagagem podem transformar suas férias dos sonhos em um pesadelo...</p>
-                <a href="#" class="btn-leia-mais">
-                    Contrate um seguro
-                    <img src="./icones e logos/seta-leia-mais.svg" alt="" class="leia-mais">
-                </a>
-            </div>
-            <div>
-                <img src="./imagens/motorista-no-carro.jpg" alt="">
-                <h3>Sem Proteção nas Estradas, Pesadelo nas Rodas</h3>
-                <p>Entre no mundo sombrio de acidentes de carro sem seguro. Você sabia que pode perder tudo em um instante? Desde colisões até roubos, os perigos das estradas são reais. Este artigo explora as consequências impactantes de não ter...</p>
-                <a href="#" class="btn-leia-mais">
-                    Contrate um seguro
-                    <img src="./icones e logos/seta-leia-mais.svg" alt="" class="leia-mais">
-                </a>
-            </div>
-        </div>
-    </section>
     <body>
         <section class="seguro-card" id="bg-color-residencia">
             <div class="seguro-card-conteudo">
                 <div class="seguro-card-apresentacao">
                     <div class="seguro-card-apresentacao-beneficios">
                         <div class="seguro-card-headline">
-                            <h3>Seguro Residencial</h3>
+                            <h3>Seguro saúde empresarial</h3>
                             <h2>Sua casa e família protegidos.</h2>
                             <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
                             <img src="imagens/familia-mobile.jpg" alt="" class="familia-mobile">
@@ -193,14 +154,13 @@
                 </div>
             </div>
         </section>
-
         <section class="seguro-card" id="bg-color-viagem">
             <div class="seguro-card-conteudo" id="padding-viagem">
                 <div class="seguro-card-apresentacao">
                     <img src="imagens/new-york.jpg" alt="" class="seguro-card-imagem">
                     <div class="seguro-card-apresentacao-beneficios">
                         <div class="seguro-card-headline">
-                            <h3>Seguro Viagem</h3>
+                            <h3>Seguro saúde individual</h3>
                             <h2>Encontre segurança na sua próxima viagem.</h2>
                             <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
                             <img src="imagens/new-york-mobile.jpg" alt="" class="new-york-mobile">
@@ -227,43 +187,6 @@
                         </div>
                         <a href="cadastro.html" class="seguro-card-conteudo-button">Contrate um seguro </a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="seguro-card" id="bg-color-residencia">
-            <div class="seguro-card-conteudo">
-                <div class="seguro-card-apresentacao">
-                    <div class="seguro-card-apresentacao-beneficios">
-                        <div class="seguro-card-headline">
-                            <h3>Seguro Automotivo</h3>
-                            <h2>As melhores coberturas pra cuidar do seu auto.</h2>
-                            <p>Assistência 24 horas, guincho sem limite de km, desconto em estacionamentos e muito mais!</p>
-                            <img src="imagens/mulher-no-carro-mobile.jpg" alt="" class="mulher-no-carro-mobile">
-                        </div>
-                        <div class="seguro-card-apresentacao-beneficio">
-                            <h4>Incêndio</h4>
-                            <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
-                        </div>
-                        <div class="seguro-card-apresentacao-beneficio">
-                            <h4>Danos a terceiros </h4>
-                            <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
-                        </div>
-                        <div class="seguro-card-apresentacao-beneficio">
-                            <h4>Danos Elétricos</h4>
-                            <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
-                        </div>
-                        <div class="seguro-card-apresentacao-beneficio">
-                            <h4>Roubo ou Furto</h4>
-                            <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
-                        </div>
-                        <div class="seguro-card-apresentacao-beneficio">
-                            <h4>Quebra de vidros e espelhos</h4>
-                            <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
-                        </div>
-                        <a href="cadastro.html" class="seguro-card-conteudo-button">Contrate um seguro </a>
-                    </div>
-                    <img src="imagens/mulher-no-carro.jpg" alt="" class="seguro-card-imagem">
                 </div>
             </div>
         </section>
