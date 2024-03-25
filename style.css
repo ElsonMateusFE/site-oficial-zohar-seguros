@@ -361,7 +361,6 @@ nav {
 
 .produtos {
     display: flex;
-    justify-content: center;
     margin: 6% auto;
 }
 
@@ -369,7 +368,7 @@ nav {
     padding: 40px;
     border-radius: 16px;
     background-color: #d98e04;
-    width: 40%;
+    margin-left: 10px;
 }
 
 .produto-seguro:hover {
@@ -399,7 +398,7 @@ nav {
 }
 
 .produto-seguro img {
-    width: 24%;
+    width: 26%;
 }
 
 .produto-seguro .btn-seguro {
