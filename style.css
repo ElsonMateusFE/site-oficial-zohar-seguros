@@ -410,6 +410,14 @@ nav {
     border-radius: 6px;
 }
 
+.sobre-nos {
+    background-color: #022728;
+}
+
+.sobre-nos img {
+    width: 10px;
+}
+
 .corretoras-seguros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
