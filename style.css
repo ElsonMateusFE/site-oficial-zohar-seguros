@@ -361,15 +361,15 @@ nav {
 
 #produtos {
     display: flex;
+    justify-content: space-between;
     margin: 6% auto;
-    background-color: #034159;
 }
 
 .produto-seguro {
-    padding: 40px;
+    padding: 30px;
     border-radius: 16px;
     background-color: #d98e04;
-    margin-left: 10px;
+    width: 32%;
 }
 
 .produto-seguro:hover {
@@ -389,6 +389,7 @@ nav {
 
 .produto-seguro h2 {
     color: white;
+    line-height: 26px;
 }
 
 .produto-seguro p {
@@ -409,6 +410,17 @@ nav {
     width: 100%;
     text-align: center;
     border-radius: 6px;
+}
+
+@media (max-width: 999px) {
+    #produtos {
+        display: block;
+    }
+
+    .produto-seguro {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 #sobre-nos {
@@ -449,6 +461,20 @@ nav {
     text-align: center;
     width: 60%;
     margin: auto;
+}
+
+@media (max-width: 999px) {
+    .dimensao-sobre-nos {
+        width: 90%;
+    }
+
+    #sobre-nos p {
+        width: 100%;
+    }
+
+    #sobre-nos img {
+        width: 14%;
+    }
 }
 
 .corretoras-seguros {
@@ -615,8 +641,10 @@ nav {
     padding: 80px 0;
 }
 
+
 #bg-color-residencia h4 {
     color: #022728;
+    line-height: 34px;
 }
 
 #bg-color-residencia h3 {
@@ -633,6 +661,21 @@ nav {
 
 #bg-color-viagem {
     background-color: #034159;
+}
+#bg-color-viagem h4 {
+    color: white;
+}
+
+#bg-color-viagem h3 {
+    color: white;
+}
+
+#bg-color-viagem h2 {
+    color: white;
+}
+
+#bg-color-viagem p {
+    color: white;
 }
 
 /**/
