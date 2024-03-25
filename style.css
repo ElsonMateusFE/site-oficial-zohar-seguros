@@ -81,7 +81,7 @@ h3 {
 
 header {
     width: 1366px;
-    margin: 25px auto;
+    margin: 25px auto 0;
 }
 
 @media (max-width: 999px) {
@@ -357,6 +357,58 @@ nav {
         font-size: 14px;
         line-height: 22px;
     }
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    margin: 6% auto;
+}
+
+.produto-seguro {
+    padding: 40px;
+    border-radius: 16px;
+    background-color: #d98e04;
+    width: 40%;
+}
+
+.produto-seguro:hover {
+    background-color: #034159;
+    transition: .5s all;
+}
+
+.produto-seguro a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.produto-seguro .copy {
+    margin-left: 40px;
+}
+
+.produto-seguro h2 {
+    color: white;
+}
+
+.produto-seguro p {
+    font-weight: 200;
+    color: white;
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+.produto-seguro img {
+    width: 24%;
+}
+
+.produto-seguro .btn-seguro {
+    border: 1.5px white solid;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
 }
 
 .corretoras-seguros {
