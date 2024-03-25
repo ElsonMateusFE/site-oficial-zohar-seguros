@@ -362,6 +362,7 @@ nav {
 #produtos {
     display: flex;
     margin: 6% auto;
+    background-color: #034159;
 }
 
 .produto-seguro {
@@ -500,64 +501,6 @@ nav {
     
     .corretoras-seguros #icone-omint {
         width: 130px;
-    }
-}
-
-.artigos {
-    width: 1366px;
-    margin: auto;
-    margin-bottom: 8%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.artigos div {
-    width: 30%;
-}
-
-.artigos h3 {
-    font-size: 24px;
-    text-align: left;
-    line-height: 32px;
-    margin: 16px 0px;
-}
-
-.artigos p {
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 24px;
-}
-
-.artigos a {
-    text-decoration: none;
-    margin: 16px 0;
-    font-weight: 400;
-}
-
-.artigos img {
-    width: 100%;
-}
-
-.artigos .leia-mais {
-    width: 22px;
-    margin-left: 10px;
-}
-
-.artigos .btn-leia-mais {
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 999px) {
-    .artigos {
-        width: 100%;
-        display: block;
-    }
-    
-    .artigos div {
-        margin: auto;
-        width: 90%;
-        margin-bottom: 40px;
     }
 }
 
