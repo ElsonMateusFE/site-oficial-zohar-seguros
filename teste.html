@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
+    <title>Document</title>
     <style>
         @import url("https://use.typekit.net/hwn4thy.css");
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -16,346 +15,247 @@
             color: #022728;
         }
 
-        h3 {
-            font-weight: 900;
+        .seguro-card {
+        margin: auto;
+        padding: 80px 0;
+    }
+
+    .div-de-beneficios {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seguro-card-conteudo {
+        width: 1366px;
+        margin: auto;
+    }
+
+    .seguro-card-apresentacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .seguro-card-apresentacao-beneficios {
+        width: 35%;
+    }
+
+    .seguro-card-apresentacao-beneficios div {
+        margin-bottom: 60px;
+    }
+
+    .seguro-card-apresentacao-beneficio h4 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .seguro-card-apresentacao-beneficio p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 100;
+    }
+
+    .seguro-card-headline h3 {
+        font-size: 16px;
+        font-weight: 200;
+        color: #1dbeb2;
+        margin-bottom: 12px;
+    }
+
+    .seguro-card-headline h2 {
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 12px;
+        line-height: 50px;
+    }
+
+    .seguro-card-headline p {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+
+
+    .seguro-card-imagem {
+        width: 40%;
+        border-radius: 200px 0px 200px 0px;
+    }
+
+    .seguro-card-conteudo-button {
+        background-color: #d98e04;
+        color: white;
+        padding: 18px 80px;
+        border-radius: 6px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        font-weight: 100;
+        width: 100%;
+        text-align: center;
+    }
+
+    .seguro-card-conteudo-button:hover {
+        background-color: #e99a08;
+        transition-duration: .5s;
+    }
+
+    .seguro-card-conteudo-button:active {
+        background-color: #d98e04;
+    }
+
+    #bg-color-residencia {
+        height: 100%;
+        padding: 80px 0;
+    }
+
+
+    #bg-color-residencia h4 {
+        color: #022728;
+        line-height: 34px;
+    }
+
+    #bg-color-residencia h3 {
+        color: #022728;
+    }
+
+    #bg-color-residencia h2 {
+        color: #022728;
+    }
+
+    #bg-color-residencia p {
+        color: #022728;
+    }
+
+    #bg-color-viagem {
+        background-color: #034159;
+    }
+    #bg-color-viagem h4 {
+        color: white;
+    }
+
+    #bg-color-viagem h3 {
+        color: white;
+    }
+
+    #bg-color-viagem h2 {
+        color: white;
+    }
+
+    #bg-color-viagem p {
+        color: white;
+    }
+
+    /**/
+    @media (max-width: 999px) {
+        .seguro-card {
+            padding: 0;
         }
 
-        .card-promocional {
-            background-color: #022728;
-            padding: 12px;
-            align-items: center;
+        #padding-viagem {
+            padding: 60px 0;
         }
 
-        .card-promocional div {
-            max-width: 908px;
-            align-items: center;
-            justify-content: space-between;
-            display: flex;
-            margin: auto;
+        .seguro-card-conteudo {
+            width: 90%;
         }
 
-        .card-promocional strong {
-            color: white;
+        .seguro-card-apresentacao-beneficios {
+            width: 100%;
+            background-color: #034159;
         }
 
-        .card-promocional p {
-            font-weight: 300;
-            color: white;
+        .seguro-card-apresentacao-beneficios div {
+            margin-bottom: 20;
         }
 
-        .card-promocional a {
-            background-color: #d98e04;
-            color: white;
-            padding: 8px 24px;
-            border-radius: 6px;
-            font-size: 16px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .card-promocional a:hover {
-            background-color: #e99a08;
-            transition-duration: .5s;
-        }
-
-        .card-promocional a:active {
-            background-color: #d98e04;
-        }
-
-        @media (max-width: 999px) {
-            .card-promocional div {
-                display: block;
-                text-align: center;
-            }
-
-            .card-promocional p {
-                margin-bottom: 22px;
-                margin: auto;
-                margin-bottom: 16px;
-                width: 96%;
-            }
-
-            .card-promocional {
-                padding: 22px 0;
-            }
-        }
-
-        header {
-            width: 1366px;
-            margin: 25px auto;
-        }
-
-        @media (max-width: 999px) {
-            header {
-                width: 90%;
-            }
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .mobile-menu {
-            cursor: pointer;
-            display: none;
-        }
-
-        .mobile-menu div {
-            width: 32px;
-            height: 4px;
-            background-color: #022728;
-            margin: 6px;
-            border-radius: 100px;
-        }
-
-        .menu-principal .logo-zohar {
-            width: 145px;
-        }
-
-        .nav-list {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-list li {
-            margin-left: 30px
-        }
-
-        .nav-list a {
-            font-weight: 300;
-            text-decoration: none;
-        }
-
-        .menu-lateral {
-            display: none;
-        }
-
-        @media (max-width: 999px) {
-            nav {
-                margin-bottom: 40px;
-            }
-
-            .nav-list {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            /* Menu Responsivo Lateral*/
-            .menu-lateral {
-                top: 0;
-                right: 0;
-                position: absolute;
-                background-color: #022728;
-                height: 100vh;
-                width: 100vw;
-                display: none;
-            }
-
-            .menu-lateral section {
-                width: 90%;
-                margin: 26px auto;
-            }
-
-            .menu-lateral section #icone-x {
-                position: absolute;
-                top: 0;
-                right: 0;
-                padding: 20px;
-                width: 60px;
-                cursor: pointer;
-            }
-
-            .menu-lateral section h2 {
-                color: white;
-                text-align: center;
-                margin-top: 90px;
-                margin-bottom: 40px;
-                font-size: 24px;
-            }
-
-            .menu-lateral ul {
-                list-style: none;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
-            }
-
-            .menu-lateral li {
-                background-color: #31363f;
-                padding: 18px;
-                border-radius: 10px;
-                width: 100%;
-            }
-
-            .menu-lateral li:hover {
-                background-color: #464d58;
-                transition: all .5s;
-            }
-
-            .menu-lateral ul li a {
-                text-decoration: none;
-            }
-
-            .menu-lateral ul li a {
-                display: block;
-            }
-
-            .menu-lateral ul li a {
-                margin: auto;
-                text-align: center;
-            }
-
-            .menu-lateral ul li img {
-                width: 36px;
-            }
-
-            .menu-lateral ul li h4 {
-                color: white;
-                font-size: 16px;
-                margin: 10px 0;
-            }
-
-            .menu-lateral ul li p {
-                color: white;
-                line-height: 18px;
-                font-size: 11px;
-            }
-
-            .btn-contato-responsivo {
-                background-color: #d98e04;
-                color: white;
-                padding: 14px 44px;
-                border-radius: 6px;
-                font-size: 18px;
-                border: none;
-                width: 100%;
-                display: block;
-                cursor: pointer;
-                text-align: center;
-                text-decoration: none;
-                margin-top: 40px;
-            }
-        }
-
-        .btn-contato {
-            background-color: #d98e04;
-            color: white;
-            padding: 8px 44px;
-            border-radius: 6px;
+        .seguro-card-headline h3 {
             font-size: 18px;
-            border: none;
-            cursor: pointer;
+            font-weight: 200;
+            color: #1dbeb2;
         }
 
-        .btn-contato:hover {
-            background-color: #e99a08;
-            transition-duration: .5s;
+        .seguro-card-headline h2 {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 49px;
         }
 
-        .btn-contato:active {
-            background-color: #d98e04;
+        .familia-mobile {
+            display: block;
+            width: 100%;
+            border-radius: 80px 0px 80px 0px;
+            margin: 30px 0;
         }
 
-        .menu-principal menu {
-            display: flex;
-            align-items: center;
+        .new-york-mobile {
+            display: block;
+            width: 100%;
+            border-radius: 80px 0px 80px 0px;
+            margin: 30px 0;
         }
 
-        .menu-principal menu a img {
-            width: 10px;
+        .mulher-no-carro-mobile {
+            display: block;
+            width: 100%;
+            border-radius: 80px 0px 80px 0px;
+            margin: 30px 0;
         }
+
+        .seguro-card-imagem {
+            display: none;
+        }
+    }
     </style>
 </head>
-
 <body>
-    <section class="card-promocional">
-        <div>
-            <p><strong>Proteja sua casa por apenas 50 centavos por dia. </strong>Adquira agora e viva com tranquilidade.</p>
-            <a href="./cadastro.html">Fale com um especialista</a>
+    <section class="seguro-card" id="bg-color-residencia">
+        <div class="seguro-card-conteudo">
+            <div class="seguro-card-apresentacao">
+                <div class="seguro-card-apresentacao-beneficios">
+                    <div class="seguro-card-headline">
+                        <h3>Seguro saúde empresarial</h3>
+                        <h2>Proteção para seus Colaboradores.</h2>
+                        <p>Acesso a uma ampla rede de cuidados médicos e serviços de saúde de qualidade.</p>
+                    </div>
+                    <div class="div-de-beneficios">
+                        <div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Cobertura para consultas médicas</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Rede ampla de profissionais e estabelecimentos de saúde.</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                        </div> 
+                        <div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Atendimento personalizado e ágil.</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Programas de prevenção e bem-estar.</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Assistência 24 horas para emergências médicas.</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                            <div class="seguro-card-apresentacao-beneficio">
+                                <h4>Assistência 24 horas para emergências médicas.</h4>
+                                <p>Com poucos cliques, você integra facilmente seu sistema de pagamento. A partir de agora, toda venda realizada aparecerá no seu eNotas, automagicamente!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="cadastro.html" class="seguro-card-conteudo-button">Contrate um seguro </a>
+                </div>
+                <img src="imagens/familia.jpg" alt="" class="seguro-card-imagem">
+            </div>
         </div>
     </section>
-
-    <header>
-        <nav class="menu-principal">
-            <a href="home.html">
-                <img src="./icones e logos/logo-oficial.svg" alt="Logo Zohar Seguros" class="logo-zohar">
-            </a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <div class="menu-lateral" id="mySidenav" class="sidenav">
-                <section>
-                    <img src="icones e logos/icone-x.svg" alt="" id="icone-x">
-                    <h2>CONHEÇA NOSSOS SEGUROS</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="icones e logos/icone-casa-branca.svg" alt="">
-                                <h4>Seguro residencial</h4>
-                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="icones e logos/icone-casa-branca.svg" alt="">
-                                <h4>Seguro residencial</h4>
-                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="icones e logos/icone-casa-branca.svg" alt="">
-                                <h4>Seguro residencial</h4>
-                                <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="./cadastro.html" class="btn-contato-responsivo">Fale conosco</a>
-                </section>
-            </div>
-            <ul class="nav-list">
-                <li>
-                    <a href="#">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="#">Artigos</a>
-                </li>
-                <li>
-                    <a href="">Produtos</a>
-                </li>
-                <li>
-                    <a href="./cadastro.html" class="btn-contato">Fale conosco</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <script>
-       document.addEventListener('DOMContentLoaded', function () {
-            const mobileMenu = document.querySelector('.mobile-menu');
-            const menuLateral = document.querySelector('.menu-lateral');
-            const iconeX = document.getElementById('icone-x');
-            const body = document.body;
-
-            mobileMenu.addEventListener('click', function () {
-                menuLateral.style.display = 'block';
-                body.classList.add('menu-lateral-aberta');
-            });
-
-            iconeX.addEventListener('click', function () {
-                menuLateral.style.display = 'none';
-                body.classList.remove('menu-lateral-aberta');
-            });
-        });
-    </script>
 </body>
-
 </html>
